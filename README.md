@@ -44,3 +44,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+git rm .idea/ -r --cached
+git add -u .idea/
+git commit -m "Removed the .idea folder"
+
+// first commit and work forward solo only
+// after studying need crash any db(make some money, all was been Ukraine)
