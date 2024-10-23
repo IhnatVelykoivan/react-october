@@ -1,7 +1,4 @@
-# Lesson 1
-In this lesson we are doing components and factoring the 'react' project
-Sofia hello!
-
+# Consultation 2
 # Project Location
 
 https://github.com/IhnatVelykoivan/react-october
@@ -23,6 +20,3 @@ You will also see any lint errors in the console.
 git rm .idea/ -r --cached
 git add -u .idea/
 git commit -m "Removed the .idea folder"
-
-// first commit and work forward solo only
-// after studying need crash any db(make some money, all was been Ukraine)
