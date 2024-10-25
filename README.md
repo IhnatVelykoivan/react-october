@@ -1,5 +1,4 @@
-# Lesson 1
-In this lesson we are doing components and factoring the 'react' project
+# Start practical working with react module
 
 # Project Location
 
