@@ -14,7 +14,7 @@ export const routes = createBrowserRouter([
             {path: 'products/:id', element: <ProductDetailsPage/>}
             // for render this page**
             // ,children:[
-            //     {path: ':id', element: <ProductDetailsPage/>}
+            //      {path: ':id', element: <ProductDetailsPage/>}
             // ]},
 
         ],
