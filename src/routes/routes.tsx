@@ -1,29 +1,24 @@
-import React from "react";
 import {createBrowserRouter} from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import Main from "../pages/Main";
-import About from "../pages/About";
-import CustomErrorLayout from "../layouts/CustomErrorLayout";
 import MainLayout from "../layouts/MainLayout";
-import AdminLayout from "../layouts/AdminLayout";
+import HomePage from "../pages/HomePage";
+import CustomErrorLayout from "../layouts/CustomErrorLayout";
+import ProductsPage from "../pages/ProductsPage";
+import ProductDetailsPage from "../pages/ProductDetailsPage";
 
-export const routes = createBrowserRouter
-([{
-    path: '/', element: <MainLayout/>, children: [
-        {
-            index: true, element: <HomePage/>
-        },
-        {
-                path: 'main', element: <Main/>,
-            // children: [
-            //     {path: 'zxc', element: <div>....</div>}
-            // ]
-        },
-        {
-            path: 'about', element: <About/>
-        },
-    ],
-    errorElement: <CustomErrorLayout/>},
-    {path: '/admin', element: <AdminLayout/>
-    }]);
+export const routes = createBrowserRouter([
+    {
+        path: '/', element: <MainLayout/>, children: [
+            {index: true, element: <HomePage/>},
+            {path: 'products', element: <ProductsPage/>},
+            // for render another page*
+            {path: 'products/:id', element: <ProductDetailsPage/>}
+            // for render this page**
+            // ,children:[
+            //     {path: ':id', element: <ProductDetailsPage/>}
+            // ]},
 
+        ],
+        errorElement: <CustomErrorLayout/>
+    },
+
+]);
