@@ -5,10 +5,11 @@ import {Link} from "react-router-dom";
 type ProductProps = {
     item: IProduct;
 }
+
 const Product: FC<ProductProps> = ({item}) => {
     return (
         <div>
-            <Link to={item.id.toString()}>{item.title}</Link>
+            <Link state={{data: item}} to={item.id.toString()}>{item.title}</Link>
         </div>
     );
 };
